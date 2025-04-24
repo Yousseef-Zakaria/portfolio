@@ -1,0 +1,24 @@
+.gradient-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px; /* Space for the underline */
+    color: #ffffff; /* Default text color - change as needed */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.gradient-underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #932ef1, #000000);
+    transition: width 0.3s ease;
+}
+
+.gradient-underline:hover::before {
+    width: 100%;
+}
+
