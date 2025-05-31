@@ -1,0 +1,23 @@
+#DEV-text{
+    position: absolute;
+    font-size: 15rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #3b1d65;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+    animation-name: DEV-text-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(1.1);
+}
+@keyframes DEV-text-animation {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

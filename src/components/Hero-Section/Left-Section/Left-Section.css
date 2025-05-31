@@ -1,0 +1,45 @@
+.text-gradient-purple{
+    background: linear-gradient(
+        to right,
+        #8953F7 0%,
+        #8953F7 40%,
+        #8953F7 50%,
+        #C9A8FF 60%,
+        #EEE6FE 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+      font-size: 4rem;
+      font-weight: 700;
+}
+
+.icons .links{
+  border: 1px solid #8750F7;
+  border-radius: 50%;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.links::before{
+  content: "";
+  position: absolute;
+  background-color: #8750F7;
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 1;
+}
+.links:hover::before  {
+  transform: translate(-50%, -50%) scale(1);
+}
+.links img{
+  position: relative;
+  z-index: 1;
+}

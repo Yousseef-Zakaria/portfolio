@@ -4,7 +4,7 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed w-full p-10 backdrop-blur-md bg-[#0F0715] z-50 border-b border-gray-800">
+        <header className="fixed w-full p-10 backdrop-blur-md bg-[#0F0715] ">
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <a href="#" className="text-2xl font-medium text-white">

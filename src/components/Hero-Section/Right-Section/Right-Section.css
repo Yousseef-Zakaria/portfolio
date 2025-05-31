@@ -1,0 +1,18 @@
+#personal-section img{
+    border: 3px solid #8850f7a3;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: #8850f7a3 0px 25px 50px -12px;
+}
+#personal-section{
+    rotate: 3deg;
+    transition: 0.3s;
+}
+#personal-section:hover {
+  rotate: 0deg;
+}
+
+#personal-section:hover img {
+  border: 3px solid #8750F7; 
+}
