@@ -43,3 +43,8 @@
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .text-for-query{
+    font-size: 2rem;
+  }
+}

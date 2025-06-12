@@ -3,9 +3,9 @@ import RightSection from "./Right-Section/Right-Section";
 import './Hero.css';
 export const Hero = () => {
   return (
-    <div className="flex justify-around items-center mt-40">   
+    <div className="flex justify-around md:mb-20 items-center ">   
     <LeftSection />
-    <div id="DEV-text" >
+    <div id="DEV-text" className="md:block hidden" >
       DEV
     </div>
     <RightSection />

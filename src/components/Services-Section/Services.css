@@ -1,0 +1,28 @@
+.text-gradient-purple{
+    background: linear-gradient(
+        to right,
+        #8952F7 0%,
+        #8953F7 40%,
+        #a171ff 50%,
+        #C9A8FF 60%,
+        #ffffff 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+}
+/* .custom-bg:hover{
+    background: linear-gradient(
+        to right,
+        #854FF4 0%,
+        #2C1557 100%
+      );
+}
+.custom-bg{
+    transition: 5s;
+} */
+
+.custom-bg:hover .me-3 {
+  color: #ffffff; 
+}

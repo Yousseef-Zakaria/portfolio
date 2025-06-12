@@ -2,12 +2,12 @@ import './Left-Section.css'
 
 const LeftSection = () => {
   return (
-    <div className='z-10'>
-      <h2 className="text-[2.25rem] text-white font-bold">I am Youssef</h2>
-      <h1 className="text-4xl mt-5 font-bold text-gradient-purple">
-        Full-Stack Developer +<br></br> Problem Solver
+    <div className='z-10 p-5 md:p-0'>
+      <h2 className="text-[2.25rem] text-for-query text-white font-bold">I am Youssef</h2>
+      <h1 className="text-4xl md:mt-5 pb-3 text-for-query font-bold text-gradient-purple">
+        Full-Stack Developer +<br></br> Software Engineer
       </h1>
-      <h3 className="text-[#dddddd] font-light text-[1.25rem] mt-5">
+      <h3 className="text-[#dddddd] font-light text-[1.25rem] text-balance mt-5">
         Transforming ideas into seamless, user-friendly web solutions <br></br>
         that solve real-world challenges.
       </h3>

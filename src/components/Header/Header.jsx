@@ -4,15 +4,15 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed w-full p-10 backdrop-blur-md bg-[#0F0715] ">
-            <div className="container mx-auto px-6 py-4">
+        <header className=" w-full md:p-10 p-5 backdrop-blur-md bg-[#0F0715] ">
+            <div className="container md:mx-auto md:px-6 py-4">
                 <div className="flex justify-between items-center">
-                    <a href="#" className="text-2xl font-medium text-white">
+                    <a href="#" className="md:text-2xl font-medium text-white">
                         Youssef.Zakaria@svnu.edu.eg
                     </a>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    <div className="md:hidden bg-[#6a3395] rounded-sm">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="text-light focus:outline-none"
@@ -59,13 +59,13 @@ export const Header = () => {
                 {/* Mobile Navigation */}
                 {isOpen && (
                     <div className="md:hidden mt-4">
-                        <div className="flex flex-col space-y-4">
+                        <div className="flex flex-col z-10 space-y-4">
                             {["Home", "About", "Projects", "Skills", "Contact"].map(
                                 (item) => (
                                     <a
                                         key={item}
                                         href={`#${item.toLowerCase()}`}
-                                        className="text-light hover:text-primary transition-colors duration-300"
+                                        className="text-white transition-colors duration-300"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {item}
